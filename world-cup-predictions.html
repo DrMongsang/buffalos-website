@@ -80,6 +80,49 @@
       padding: 0 4px;
     }
 
+    .match-info {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 4px 16px;
+      padding: 10px 16px;
+      background: #1f2937;
+      color: #d1d5db;
+      font-size: 12.5px;
+      text-align: center;
+    }
+
+    .match-info .datetime {
+      font-weight: 700;
+      color: #fbbf24;
+    }
+
+    .highlight {
+      padding: 14px 16px 16px;
+      background: #f8fafc;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .highlight-label {
+      display: inline-block;
+      margin-bottom: 8px;
+      padding: 3px 10px;
+      border-radius: 999px;
+      background: #111827;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .highlight p {
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.8;
+      color: #374151;
+    }
+
     .predictions {
       display: flex;
       flex-direction: column;
@@ -196,6 +239,15 @@
       .type {
         font-size: 10.5px;
       }
+
+      .match-info {
+        font-size: 11px;
+        padding: 8px 10px;
+      }
+
+      .highlight p {
+        font-size: 12px;
+      }
     }
   </style>
 </head>
@@ -218,6 +270,11 @@
         <span class="vs">vs</span>
         <span class="team-name">ノルウェー</span>
         <span class="flag">🇳🇴</span>
+      </div>
+
+      <div class="match-info">
+        <span class="datetime">🗓 日本時間 7月12日（日）午前6:00 キックオフ</span>
+        <span class="venue">📍 ハードロック・スタジアム（マイアミ）</span>
       </div>
 
       <div class="predictions">
@@ -248,6 +305,13 @@
           <div class="type">高得点狙い</div>
         </div>
       </div>
+
+      <div class="highlight">
+        <span class="highlight-label">見どころ</span>
+        <p>
+          ハーランド vs ケイン、両エースの真っ向勝負。ノルウェーはラウンド16で王国ブラジルを2-1で撃破し、史上初のベスト8進出。ハーランドは初出場のW杯で4試合7得点と大爆発中。一方のイングランドはケインの土壇場弾やベリンガムの2ゴールなど、接戦をしぶとくモノにして勝ち上がってきた。堅い試合か、打ち合いか——展開の読みが分かれる一戦。
+        </p>
+      </div>
     </section>
 
     <!-- ベルギー vs スペイン -->
@@ -258,6 +322,11 @@
         <span class="vs">vs</span>
         <span class="team-name">スペイン</span>
         <span class="flag">🇪🇸</span>
+      </div>
+
+      <div class="match-info">
+        <span class="datetime">🗓 日本時間 7月11日（土）午前4:00 キックオフ</span>
+        <span class="venue">📍 ソーファイ・スタジアム（ロサンゼルス）</span>
       </div>
 
       <div class="predictions">
@@ -291,6 +360,13 @@
           <div class="type">高得点狙い</div>
         </div>
       </div>
+
+      <div class="highlight">
+        <span class="highlight-label">見どころ</span>
+        <p>
+          欧州王者スペインはここまで全勝、しかも無失点。GKウナイ・シモンが無失点記録を更新中で、ロドリ&ペドリの中盤支配にオヤルサバル（4得点）が絡む鉄壁の完成度を誇る。対するベルギーは公式戦18試合無敗と絶好調で、デ・ブライネの先発復帰が焦点。ベルギーが速攻でスペインの高いラインの裏を突けるか、それともスペインが完封を続けるかが最大の見どころ。
+        </p>
+      </div>
     </section>
 
     <!-- アルゼンチン vs スイス -->
@@ -301,6 +377,11 @@
         <span class="vs">vs</span>
         <span class="team-name">スイス</span>
         <span class="flag">🇨🇭</span>
+      </div>
+
+      <div class="match-info">
+        <span class="datetime">🗓 日本時間 7月12日（日）午前10:00 キックオフ</span>
+        <span class="venue">📍 アローヘッド・スタジアム（カンザスシティ）</span>
       </div>
 
       <div class="predictions">
@@ -334,6 +415,13 @@
           <div class="type">高得点狙い</div>
         </div>
       </div>
+
+      <div class="highlight">
+        <span class="highlight-label">見どころ</span>
+        <p>
+          連覇を狙う王者アルゼンチン。39歳のメッシは今大会8得点で得点王争いの単独トップに立ち、W杯通算得点記録も更新中。ラストW杯とみられる大会で、エジプト戦の2点差逆転劇など勝負強さは健在だ。ただしノックアウトステージは2試合連続の薄氷勝利で、隙がないわけではない。スイスはコロンビアをPK戦で下して1954年以来のベスト8。堅守で耐えて大金星を狙う。
+        </p>
+      </div>
     </section>
 
     <section class="summary">
@@ -357,7 +445,8 @@
 
     <p class="note">
       ※的中確率は、あくまでネット上の情報（市場オッズなど）をもとにした概算です。
-      公式な確率ではありません。スコア予想は90分終了時点を想定しています。
+      公式な確率ではありません。スコア予想は90分終了時点を想定しています。<br />
+      ※試合日時（日本時間）・見どころは2026年7月10日時点のネット上の情報に基づきます。
     </p>
   </main>
 </body>
