@@ -123,6 +123,55 @@
       color: #374151;
     }
 
+    .result-banner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 8px 12px;
+      padding: 12px 16px;
+      background: #ecfdf5;
+      border-bottom: 1px solid #a7f3d0;
+    }
+
+    .result-banner .result-label {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 999px;
+      background: #059669;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .result-banner .result-score {
+      font-size: 16px;
+      font-weight: 800;
+      color: #065f46;
+    }
+
+    .result {
+      padding: 14px 16px 16px;
+      background: #f0fdf4;
+      border-top: 1px solid #d1fae5;
+    }
+
+    .result .highlight-label {
+      background: #059669;
+    }
+
+    .result p {
+      margin: 0 0 6px;
+      font-size: 13px;
+      line-height: 1.8;
+      color: #14532d;
+    }
+
+    .result p:last-child {
+      margin-bottom: 0;
+    }
+
     .predictions {
       display: flex;
       flex-direction: column;
@@ -329,6 +378,11 @@
         <span class="venue">📍 ソーファイ・スタジアム（ロサンゼルス）</span>
       </div>
 
+      <div class="result-banner">
+        <span class="result-label">試合終了</span>
+        <span class="result-score">🇧🇪 ベルギー 1 - 2 スペイン 🇪🇸</span>
+      </div>
+
       <div class="predictions">
         <div class="prediction-row main-bet">
           <div class="player">た</div>
@@ -362,9 +416,19 @@
       </div>
 
       <div class="highlight">
-        <span class="highlight-label">見どころ</span>
+        <span class="highlight-label">見どころ（試合前）</span>
         <p>
           欧州王者スペインはここまで全勝、しかも無失点。GKウナイ・シモンが無失点記録を更新中で、ロドリ&ペドリの中盤支配にオヤルサバル（4得点）が絡む鉄壁の完成度を誇る。対するベルギーは公式戦18試合無敗と絶好調で、デ・ブライネの先発復帰が焦点。ベルギーが速攻でスペインの高いラインの裏を突けるか、それともスペインが完封を続けるかが最大の見どころ。
+        </p>
+      </div>
+
+      <div class="result">
+        <span class="highlight-label">結果</span>
+        <p>
+          スペインが2-1で勝利し、準決勝進出（フランスと対戦）。ファビアン・ルイスの先制点にデ・ケテラーレが同点で応じ、スペインの無失点記録はここでストップ。しかし88分にミケル・メリーノが決勝点を押し込んだ。ベルギーは主将ティーレマンスをウォームアップ中の負傷で欠き、GKクルトワも後半に負傷交代と不運が重なった。
+        </p>
+        <p>
+          <strong>予想結果：</strong>スコア的中者なし。勝敗と「スペイン1点差勝ち」まで当てた「た」（0-1）が最接近。
         </p>
       </div>
     </section>
